@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patel Equipment | Customer Reviews</title>
+
+    <meta
+        name="description"
+        content="Read customer reviews and share your experience with Patel Equipment."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="#" class="logo">
+                <span class="logo-mark">PE</span>
+
+                <span class="logo-text">
+                    <strong>Patel Equipment</strong>
+                    <small>Quality & Reliability</small>
+                </span>
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-content">
+
+                <span class="eyebrow">
+                    CUSTOMER EXPERIENCE
+                </span>
+
+                <h1>
+                    What Our Customers Say
+                </h1>
+
+                <p>
+                    Your feedback helps us improve and helps other
+                    customers make confident decisions.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- Rating Summary -->
+        <section class="rating-section">
+            <div class="container">
+
+                <div class="rating-card">
+
+                    <div class="rating-main">
+
+                        <div class="rating-number" id="averageRating">
+                            0.0
+                        </div>
+
+                        <div class="rating-stars" id="averageStars">
+                            ?????
+                        </div>
+
+                        <p>
+                            Based on
+                            <strong id="reviewCount">0</strong>
+                            reviews
+                        </p>
+
+                    </div>
+
+
+                    <div class="rating-divider"></div>
+
+
+                    <div class="rating-info">
+
+                        <h3>We value your feedback</h3>
+
+                        <p>
+                            Had an experience with Patel Equipment?
+                            Share your honest feedback with us.
+                        </p>
+
+                        <a
+                            href="#write-review"
+                            class="primary-button"
+                        >
+                            Write a Review
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Reviews -->
+        <section class="reviews-section">
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="eyebrow">
+                            CUSTOMER FEEDBACK
+                        </span>
+
+                        <h2>
+                            Recent Reviews
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div id="reviewsList" class="reviews-grid">
+
+                    <div class="empty-state" id="emptyState">
+
+                        <div class="empty-icon">
+                            ?
+                        </div>
+
+                        <h3>No reviews yet</h3>
+
+                        <p>
+                            Be the first customer to share your
+                            experience with Patel Equipment.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Write Review -->
+        <section
+            class="write-review-section"
+            id="write-review"
+        >
+
+            <div class="container">
+
+                <div class="form-wrapper">
+
+                    <div class="form-heading">
+
+                        <span class="eyebrow">
+                            YOUR EXPERIENCE
+                        </span>
+
+                        <h2>
+                            Write a Review
+                        </h2>
+
+                        <p>
+                            Tell us about your experience with
+                            Patel Equipment.
+                        </p>
+
+                    </div>
+
+
+                    <form id="reviewForm">
+
+                        <!-- Name -->
+                        <div class="form-group">
+
+                            <label for="customerName">
+                                Your Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="customerName"
+                                placeholder="Enter your name"
+                                maxlength="60"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Rating -->
+                        <div class="form-group">
+
+                            <label>
+                                Your Rating
+                            </label>
+
+                            <div
+                                class="star-selector"
+                                id="ratingInput"
+                                aria-label="Select rating"
+                            >
+
+                                <button
+                                    type="button"
+                                    data-rating="1"
+                                    aria-label="1 star"
+                                >
+                                    ?
+                                </button>
+
+                                <button
+                                    type="button"
+                                    data-rating="2"
+                                    aria-label="2 stars"
+                                >
+                                    ?
+                                </button>
+
+                                <button
+                                    type="button"
+                                    data-rating="3"
+                                    aria-label="3 stars"
+                                >
+                                    ?
+                                </button>
+
+                                <button
+                                    type="button"
+                                    data-rating="4"
+                                    aria-label="4 stars"
+                                >
+                                    ?
+                                </button>
+
+                                <button
+                                    type="button"
+                                    data-rating="5"
+                                    aria-label="5 stars"
+                                >
+                                    ?
+                                </button>
+
+                            </div>
+
+                            <span
+                                class="rating-help"
+                                id="ratingHelp"
+                            >
+                                Select your rating
+                            </span>
+
+                        </div>
+
+
+                        <!-- Review -->
+                        <div class="form-group">
+
+                            <label for="reviewText">
+                                Your Review
+                            </label>
+
+                            <textarea
+                                id="reviewText"
+                                rows="6"
+                                maxlength="1000"
+                                placeholder="Share your experience..."
+                                required
+                            ></textarea>
+
+                            <div class="character-count">
+                                <span id="characterCount">0</span>/1000
+                            </div>
+
+                        </div>
+
+
+                        <!-- Submit -->
+                        <button
+                            type="submit"
+                            class="submit-button"
+                        >
+                            Submit Review
+                        </button>
+
+                        <p class="form-note">
+                            Reviews may be checked before being
+                            published.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <strong>Patel Equipment</strong>
+
+                <p>
+                    Quality equipment you can rely on.
+                </p>
+            </div>
+
+            <p class="copyright">
+                © 2026 Patel Equipment. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
